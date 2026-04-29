@@ -16,7 +16,7 @@ export default function HomePage() {
       <Hero />
       <ValueGrid />
       <StrategicPillars />
-      <ProblemClustersPreview />
+      {/* <ProblemClustersPreview /> */}
       <RseFramework />
       <ActorsEcosystem />
       <MethodologyMap />
