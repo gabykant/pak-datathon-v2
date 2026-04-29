@@ -1,0 +1,82 @@
+import Image from 'next/image'
+import { ButtonLink } from '@/components/ui/button-link'
+import { siteConfig } from '@/lib/site'
+
+export function Hero() {
+  return (
+    <section className="relative overflow-hidden border-b border-[var(--ink-200)] bg-[linear-gradient(180deg,#f9fbff_0%,#f5f8fd_45%,#fff7eb_100%)]">
+      <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:px-8 lg:py-24">
+        <div className="space-y-6">
+          <p className="inline-flex rounded-full bg-white px-4 py-1 text-xs font-bold uppercase tracking-[0.16em] text-[var(--brand-700)] ring-1 ring-[var(--ink-200)]">
+            Démarrage officiel: {siteConfig.startDate}
+          </p>
+          {/* <h1 className="text-balance text-4xl font-black leading-tight text-[var(--ink-900)] sm:text-5xl">
+            Plateforme ERP data collaborative pour transformer les défis logistiques en décisions mesurables.
+          </h1> */}
+          <h1 className="text-balance text-4xl font-black leading-tight text-[var(--ink-900)] sm:text-5xl">
+            Plateforme ERP
+
+            <span className="mt-3 block text-xl italic font-medium text-[var(--ink-700)] sm:text-2xl">
+              data collaborative pour transformer les défis logistiques en décisions
+            </span>
+          </h1>
+          <p className="max-w-2xl text-lg leading-relaxed text-[var(--ink-700)]">
+            PAK centralise les données navires, marchandises, commerce international et camions. Les membres
+            s’onboardent, se regroupent en équipes, classifient les problématiques systémiques et soumettent des
+            requêtes data argumentées pour bâtir des solutions robustes.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <ButtonLink href="/auth/register">Rejoindre la plateforme</ButtonLink>
+            <ButtonLink href="/problematiques" variant="secondary">
+              Découvrir les enjeux
+            </ButtonLink>
+            <ButtonLink href="/programme" variant="secondary">
+              Voir la méthodologie
+            </ButtonLink>
+          </div>
+
+          {/* <div className="flex flex-wrap items-center gap-4 rounded-2xl border border-[var(--ink-200)] bg-white/80 px-4 py-3 text-xs text-[var(--ink-700)]">
+            <span className="font-semibold uppercase tracking-[0.12em] text-[var(--brand-700)]">Partenaires design</span>
+            <Image src="/logo.png" alt="PAK" width={80} height={80} className="h-15 w-auto rounded-full object-cover" />
+            <Image src="/activspaces.png" alt="ActivSpaces" width={90} height={28} className="h-7 w-auto object-contain" />
+          </div> */}
+          <div className="rounded-2xl border border-[var(--ink-200)] bg-white/80 px-4 py-4">
+  
+            <span className="block text-xs font-semibold uppercase tracking-[0.12em] text-[var(--brand-700)]">
+              Partenaires design
+            </span>
+
+            <div className="mt-4 flex flex-wrap items-center gap-6">
+              <Image
+                src="/logo.png"
+                alt="PAK"
+                width={100}
+                height={100}
+                className="h-25 w-auto rounded-full object-cover"
+              />
+
+              <Image
+                src="/activspaces.png"
+                alt="ActivSpaces"
+                width={90}
+                height={28}
+                className="h-7 w-auto object-contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="relative rounded-3xl border border-[var(--ink-200)] bg-white p-4 shadow-xl shadow-black/5">
+          <Image
+            src="/labox-datathon.png"
+            alt="PAK DataThon"
+            width={1200}
+            height={900}
+            className="h-auto w-full rounded-2xl object-cover"
+            priority
+          />
+        </div>
+      </div>
+    </section>
+  )
+}
