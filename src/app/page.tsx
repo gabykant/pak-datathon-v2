@@ -21,7 +21,7 @@ export default function HomePage() {
       <ActorsEcosystem />
       <MethodologyMap />
       <Journey />
-      <RoadmapTimeline />
+      {/* <RoadmapTimeline /> */}
       <CtaBand />
     </MarketingLayout>
   )

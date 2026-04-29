@@ -12,7 +12,7 @@ const steps = [
 
 export function MethodologyMap() {
   return (
-    <section className="bg-[var(--sand-100)] py-16 sm:py-20">
+    <section className="bg-[var(--sand-100)] py-16 sm:py-10">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 sm:px-6 lg:px-8">
         <SectionTitle
           eyebrow="Méthodologie"

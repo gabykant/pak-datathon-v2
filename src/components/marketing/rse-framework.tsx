@@ -36,7 +36,7 @@ const pillars = [
 
 export function RseFramework() {
   return (
-    <section className="bg-[var(--ink-900)] py-16 text-white sm:py-20">
+    <section className="bg-[var(--ink-900)] py-16 text-white sm:py-10">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 sm:px-6 lg:px-8">
         <SectionTitle
           eyebrow="Démarche RSE"
