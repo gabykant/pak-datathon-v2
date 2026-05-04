@@ -26,7 +26,7 @@ export function Hero() {
             requêtes data argumentées pour bâtir des solutions robustes.
           </p>
           <div className="flex flex-wrap gap-3">
-            <ButtonLink href="/auth/register">Rejoindre la plateforme</ButtonLink>
+            <ButtonLink href="/auth/register" variant="tertiary">Rejoindre la plateforme</ButtonLink>
             <ButtonLink href="/problematiques" variant="secondary">
               Découvrir les enjeux
             </ButtonLink>

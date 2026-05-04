@@ -4,6 +4,25 @@ import { SectionTitle } from '@/components/ui/section-title'
 export default function AboutPage() {
   return (
     <MarketingLayout>
+
+      <section className="mx-auto w-full max-w-6xl space-y-8 px-4 py-16 sm:px-6 lg:px-8">
+        <SectionTitle
+          eyebrow="A Propos"
+          title="Box Lab PAK - ActivSpaces"
+          subtitle="Contexte et vision du projet"
+        />
+        <article className="rounded-2xl border border-[var(--ink-200)] bg-white p-6">
+          <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)]">
+            Le Box Lab est une initiative ambitieuse visant à déployer un laboratoire d’innovation au sein d’ActivSpaces, un incubateur de startups réputé de Douala.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)]">Ce partenariat stratégique entre le Port Autonome de Kribi (PAK) et ActivSpaces permettra de créer un espace de travail dynamique et connecté, équipé de ressources technologiques avancées.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)]">
+            Le PAK assure le financement de cette prestation, témoignant de son engagement envers l’innovation et le développement technologique dans le secteur portuaire camerounais.
+          </p>
+        </article>
+      </section>
+
       <section className="mx-auto w-full max-w-6xl space-y-8 px-4 py-16 sm:px-6 lg:px-8">
         <SectionTitle
           eyebrow="Projet"
