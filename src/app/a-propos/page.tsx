@@ -19,6 +19,31 @@ export default function AboutPage() {
           <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)]">Le PAK assure le financement de cette prestation, témoignant de son engagement envers l’innovation et le développement technologique dans le secteur portuaire camerounais.
           </p>
         </article>
+
+        <div className="grid gap-6 lg:grid-cols-2">
+          <article className="rounded-2xl border border-[var(--ink-200)] bg-white p-6">
+            <h3 className="text-lg font-black text-[var(--ink-900)]">Vision stratégique</h3>
+            <ul className="mt-3 space-y-2 text-sm text-[var(--ink-700)]">
+              <li>• Positionner le PAK comme leader de linnovation portuaire.</li>
+              <li>• Développer des solutions concrètes pour les défis portuaires.</li>
+              <li>• Préparer l’écosystème pour le datathon à venir.</li>
+              <li>• Stimuler l’économie locale et créer des opportunités.</li>
+            </ul>
+          </article>
+
+          <article className="rounded-2xl border border-[var(--ink-200)] bg-white p-6">
+            <h3 className="text-lg font-black text-[var(--ink-900)]">Laboratoire d’innovation</h3>
+            <ul className="mt-3 space-y-2 text-sm text-[var(--ink-700)]">
+              <li>• Accès à des bases de données anonymisées et à une intelligence artificielle (IA) finement ajustée aux spécificités du port.</li>
+            </ul>
+
+            <h3 className="text-lg font-black text-[var(--ink-900)]">Écosystème collaboratif</h3>
+            <ul className="mt-3 space-y-2 text-sm text-[var(--ink-700)]">
+              <li>Synergie entre les acteurs portuaires, les jeunes entrepreneurs et les startups innovantes.</li>
+            </ul>
+          </article>
+        </div>
+
       </section>
 
       <section className="mx-auto w-full max-w-6xl space-y-8 px-4 py-6 sm:px-6 lg:px-8">
