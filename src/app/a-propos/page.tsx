@@ -36,10 +36,10 @@ export default function AboutPage() {
             <ul className="mt-3 space-y-2 text-sm text-[var(--ink-700)]">
               <li>• Accès à des bases de données anonymisées et à une intelligence artificielle (IA) finement ajustée aux spécificités du port.</li>
             </ul>
-
+<br />
             <h3 className="text-lg font-black text-[var(--ink-900)]">Écosystème collaboratif</h3>
             <ul className="mt-3 space-y-2 text-sm text-[var(--ink-700)]">
-              <li>Synergie entre les acteurs portuaires, les jeunes entrepreneurs et les startups innovantes.</li>
+              <li>• Synergie entre les acteurs portuaires, les jeunes entrepreneurs et les startups innovantes.</li>
             </ul>
           </article>
         </div>
