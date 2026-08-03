@@ -6,6 +6,8 @@ const protectedPaths = ['/dashboard', '/onboarding', '/admin']
 export function middleware(request: NextRequest) {
   const token = request.cookies.get(AUTH_COOKIE_NAME)?.value
 
+  console.log('Value Middleware request token:', request.cookies.get(AUTH_COOKIE_NAME)) // Debugging line
+
   console.log('Middleware request cookies:', request.cookies) // Debugging line
   const pathname = request.nextUrl.pathname
 
