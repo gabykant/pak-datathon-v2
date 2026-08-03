@@ -59,7 +59,7 @@ export async function getCurrentUser(): Promise<AuthUser | null> {
   const cookieStore = await cookies()
   // const token = cookieStore.get(AUTH_COOKIE_NAME)?.value
   const token = cookieStore.get("pak_token")?.value
-  console.log('Current user token:', token) // Debugging line
+  console.log('Current user token 4:', cookieStore) // Debugging line
   if (!token) return null
   console.log('Token found:', token) // Debugging line
 
