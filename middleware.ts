@@ -25,6 +25,7 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL('/dashboard', request.url))
   }
 
+  console.log('Middleware: No redirection needed, proceeding to next') // Debugging line
   return NextResponse.next()
 }
 
