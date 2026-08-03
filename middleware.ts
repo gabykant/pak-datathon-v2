@@ -10,7 +10,7 @@ export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
 
   console.log('Middleware request pathname:', pathname) // Debugging line
-  console.log('Middleware request token:', token) // Debugging line
+  console.log('Middleware request token 5555:', token) // Debugging line
 
   const needsAuth = protectedPaths.some((path) => pathname.startsWith(path))
   if (needsAuth && !token) {
