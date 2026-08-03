@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import { MarketingLayout } from '@/components/marketing/marketing-layout'
 import { SectionTitle } from '@/components/ui/section-title'
 import { clusterLabels } from '@/lib/site'

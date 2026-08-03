@@ -37,9 +37,9 @@ export async function SiteHeader() {
 
       {!user ? (
         <div className="flex items-center gap-2">
-          <ButtonLink href="/auth/login?next=/admin" variant="secondary" className="hidden lg:inline-flex">
+          {/* <ButtonLink href="/auth/login?next=/admin" variant="secondary" className="hidden lg:inline-flex">
             Espace admin
-          </ButtonLink>
+          </ButtonLink> */}
           <ButtonLink href="/auth/login" variant="secondary" className="hidden sm:inline-flex">
             Connexion
           </ButtonLink>
