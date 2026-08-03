@@ -10,9 +10,14 @@ import { clusterProblemTypes } from '@/lib/problem-clusters'
 export default async function DashboardPage() {
   const user = await getCurrentUser()
 
+  console.log('DashboardPage user:', user) // Debugging line
+
   if (!user) {
+    console.log('No user found, redirecting to login') // Debugging line
     redirect('/auth/login')
   }
+
+  console.log('User found:', user) // Debugging line
 
   if (user.onboardingStep !== 'DASHBOARD_ACTIF') {
     redirect('/onboarding')
