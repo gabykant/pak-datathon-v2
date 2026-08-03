@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { LogoutButton } from './logout-button'
 
 type DashboardShellProps = {
   title: string
@@ -32,9 +33,10 @@ export function DashboardShell({ title, subtitle, children, role = 'user' }: Das
                 Admin
               </Link>
             ) : null}
-            <Link href="/api/auth/logout" className="rounded-lg px-3 py-2 text-[var(--danger-500)] hover:bg-red-50">
+            {/* <Link href="/api/auth/logout" prefetch={false} className="rounded-lg px-3 py-2 text-[var(--danger-500)] hover:bg-red-50">
               Déconnexion
-            </Link>
+            </Link> */}
+            <LogoutButton />
           </nav>
         </div>
       </header>
