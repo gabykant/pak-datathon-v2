@@ -2,8 +2,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { siteConfig } from '@/lib/site'
 import { ButtonLink } from '@/components/ui/button-link'
+import { getCurrentUser } from '@/lib/auth'
+import { LogoutButton } from '../dashboard/logout-button'
 
-export function SiteHeader() {
+export async function SiteHeader() {
+
+  const user = await getCurrentUser()
+  
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--ink-200)] bg-white shadow-sm">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
@@ -30,6 +35,7 @@ export function SiteHeader() {
           ))}
         </nav>
 
+      {!user ? (
         <div className="flex items-center gap-2">
           {/* <ButtonLink href="/auth/login?next=/admin" variant="secondary" className="hidden lg:inline-flex">
             Espace admin
@@ -40,7 +46,14 @@ export function SiteHeader() {
           {/* <Link href="/auth/register" className="hidden sm:inline-flex bold">Inscription</Link> */}
           <ButtonLink href="/auth/register" variant="primary" className="hidden sm:inline-flex bold text-white">Commencer</ButtonLink>
         </div>
+      ) : (
+        <div className="flex items-center gap-2">
+          <ButtonLink href="/dashboard" variant="primary" className="hidden sm:inline-flex bold text-white">Tableau de bord</ButtonLink>
+          <LogoutButton />
+        </div>
+      )}
       </div>
+
     </header>
   )
 }
